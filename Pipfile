@@ -1,0 +1,35 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+autopep8 = "*"
+pylint = "*"
+
+[packages]
+django = "*"
+django-crispy-forms = "*"
+coverage = "*"
+model-bakery = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+lazy-object-proxy = "*"
+pygments = "*"
+django-cryptography = "*"
+django-oauth-toolkit = "*"
+pillow = "*"
+social-auth-app-django = "*"
+python-decouple = "*"
+httpie = "*"
+django-ckeditor = "*"
+isort = "*"
+six = "*"
+markdown2 = "*"
+django-widget-tweaks = "*"
+django-mptt = "*"
+django-awesome-avatar = "*"
+
+[requires]
+python_version = "3.8"

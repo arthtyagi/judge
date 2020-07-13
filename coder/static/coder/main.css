@@ -1,0 +1,147 @@
+body {
+    background: #1f1f1f;
+    font-weight: 400;
+    font-size: 16px;
+    color: aliceblue;
+    margin-top: 5rem;
+    overflow-y: scroll;
+    font-family: "Roboto Mono";
+    padding-top: 50px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: rgb(255, 228, 194);
+    font-family: "Poppins";
+  }
+  .light-mode {
+    background-color:aliceblue;
+    color: #1f1f1f;
+    
+  }
+  
+  ul {
+    margin: 0;
+  }
+  
+  .bg-steel {
+    background:#0f0f10;
+  }
+  
+  .navbar-nav{
+  padding-bottom: 20px;
+  padding-top: 25px;
+  
+  }
+  .site-header .navbar-nav .nav-link {
+    color: #ffffff;
+    font-family: 'Source Code Pro';
+    font-weight: lighter;
+    font-size: 20px;
+  }
+  
+  .site-header .navbar-nav .nav-link:hover {
+  color: #4b4b4b;
+  }
+  
+  .site-header .navbar-nav .nav-link.active {
+    font-weight: lighter;
+  }
+  
+  .content-section {
+    background-image: repeat 0 0;
+    padding: 10px 20px;
+    color: rgb(228, 228, 228);
+    border: 1px solid #000000;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+  
+  .article-title {
+    color: #ededed;
+  }
+  
+  a.article-title:hover {
+    color: #8c8c8c;
+    text-decoration: none;
+  }
+  
+  .article-content {
+    color: antiquewhite;
+    white-space: pre-line;
+  }
+  
+  .article-img {
+    height: 65px;
+    width: 65px;
+    margin-right: 16px;
+  }
+  
+  .article-metadata {
+    color: antiquewhite;
+    padding-bottom: 1px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid #7d7d7d
+  }
+  
+  .article-metadata a:hover {
+    color: rgb(237, 237, 237);
+    text-decoration: none;
+  }
+  
+  .article-svg {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+  }
+  
+  .account-img {
+    height: 150px;
+    width: 150px;
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .account-heading {
+    color: aliceblue;
+    font-size: 2.5rem;
+  }
+  
+  .footer {
+    font-family: monospace;
+    font-size: small;
+    font-weight: lighter;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000000;
+    color: white;
+    text-align: center;
+  }
+  
+  .pagination>li>a {
+    background-color: transparent;
+    color: aliceblue;
+    position: absolute !important;
+    bottom: auto !important;
+    border-color: #171717;
+  }
+  
+  .pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    color: #5a5a5a;
+    background-color: rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0);
+  }
+  
+  .pagination>.active>a {
+    color: rgb(0, 0, 0);
+    background-color: rgb(34, 34, 34)!Important;
+    border: solid 1px #000000 !Important;
+  }
+  
+  .pagination>.active>a:hover {
+    background-color: #000000 !Important;
+    border: solid 1px #000000;
+  }
+  
+  
