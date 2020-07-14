@@ -8,9 +8,10 @@
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arthtyagi/judge)
 
+
 An online judge built with Python and the Django framework to test cases against your solution. A better version of this is to be implemented in DomeCode. Check out the sponsor links and help fund DomeCode.
 
-I'm trying to build an online judge to allow users of DomeCode to practice coding problems online.
+I'm trying to build an online judge to allow users of DomeCode to practice coding problems online. DomeCode is a project of mine in the making that allows people to learn code by practicing,participating in DomeCode's forum and using the resources compiled from all over the internet and woven together to create a one-stop experience for programmers.
 
 ## Why?
 
