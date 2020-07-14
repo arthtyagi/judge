@@ -1,6 +1,12 @@
-# Judge
+# Judge⚖️
 
 ![GitHub](https://img.shields.io/github/license/arthtyagi/judge?style=flat-square)
+
+![Discord](https://img.shields.io/discord/723603615582912512?color=black&logo=discord&logoColor=white)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/arthtyagi/judge/django)
+![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arthtyagi/judge)
 
 An online judge built with Python and the Django framework to test cases against your solution. A better version of this is to be implemented in DomeCode. Check out the sponsor links and help fund DomeCode.
 
