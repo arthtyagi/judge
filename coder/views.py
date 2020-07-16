@@ -21,4 +21,5 @@ class CoderDetailView(DetailView):
 class CoderCreateView(CreateView):
     model = Answer
     template_name = "coder/coder_form.html"
+    form_class = ResultForm
     
