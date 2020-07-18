@@ -1,50 +1,64 @@
-{%extends "coder/base.html"%}
-{%load static%}
-{% block content%}
-<div id="player"></div>
+{% extends "coder/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="col-sm-5">
+    <div class="card-deck">
+        <form class="form-inline" method="GET" autocomplete="off" action="/object/">
+            <input class="form-control mr-sm-2" type="search" name="q" placeholder="content/keyword"
+                aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"> 🔍</button>
+        </form>
+    </div>
+</div>
 
-    <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+<!--Improve Search with Incremental Search (AJAX and JQuery)-->
 
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '390',
-          width: '640',
-          videoId: 'M7lc1UVf-VE',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
 
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
-    </script>
- 
+<h1>Practice </h1>
 
-{%endblock content%}
+
+{% for object in question %}
+<article class="media content-section shadow">
+    <div class="media-body container-fluid">
+        <h3><a href="{%url 'coder:detail' object.pk%}">{{object.title }}</a></h3>
+    </div>
+</article>
+{% endfor %}
+
+
+
+{% if page_obj.has_previous %}
+
+<a class="page-link badge badge-dark badge-pill"
+    href="?{% if query %}q={{query}}&{% endif %}page={{ page_obj.previous_page_number }}">&laquo; Previous</a>
+
+{% endif %}
+
+{% for i in page_obj.paginator.page_range %}
+{% if page_obj.number == i %}
+<a class="page-link badge badge-dark badge-pill">Page {{ i }}</a>
+{% else %}
+<a class="page-link badge badge-dark badge-pill" href="?{% if query %}q={{query}}&{% endif %}page={{ i }}">
+    {{ i }}</a>
+
+{% endif %}
+{% endfor %}
+
+{% if page_obj.has_next %}
+
+<a class="page-link badge badge-dark badge-pill"
+    href="?{% if query %}q={{query}}&{% endif %}page={{ page_obj.next_page_number }}">Next</a>
+
+
+<a class="page-link badge badge-dark badge-pill"
+    href="?{% if query %}q={{query}}&{% endif %}page={{ page_obj.paginator.num_pages }}">Last
+    &raquo;</a>
+
+{% endif %}
+
+<br>
+
+
+{% endblock content %}

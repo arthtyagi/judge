@@ -1,0 +1,19 @@
+{% extends "coder/base.html" %}
+{%load viewans%}
+{% block content %}
+<h2 class="article-title">Q. {{ question.title }}</h2>
+<article class="media content-section shadow">
+    {{question.content|safe}}
+</article>
+
+<h3>Your submissions</h3>
+
+{%for answer in question|submissions%}
+<div class="content-section">
+    <a href="{{answer.result.url}}">{{answer.result|safe}}</a>
+</div>
+
+{%endfor%}
+<span class="badge badge-dark badge-pill"> <a class="nav-item nav-link" href="{%url 'coder:submit' object.pk%}">Submit
+        Answer</a></span>
+{% endblock content %}

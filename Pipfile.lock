@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0407759d933e35d65bcc99d04293e2335cb2693ce069b65f692b44f181e8d1a0"
+            "sha256": "c24f7c308109217c141f02bbd27741933c37a93aa8bbe2f97e7766a645bf0f8b"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -136,6 +136,13 @@
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3, 3.4'",
             "version": "==2.9.2"
         },
+        "decouple": {
+            "hashes": [
+                "sha256:c253c1cc62b76e9720a066f334552548c6de1884bc3bdf456ddb62d61b867b09"
+            ],
+            "index": "pypi",
+            "version": "==0.0.7"
+        },
         "defusedxml": {
             "hashes": [
                 "sha256:6687150770438374ab581bb7a1b327a847dd9c5749e396102de3fad4e8a3ef93",
@@ -255,11 +262,11 @@
         },
         "isort": {
             "hashes": [
-                "sha256:3d8e0d7678b66af1e3a6936f2a380a5d4f3faf4b1b38c6aaa4bed6695c6bdcde",
-                "sha256:639b8084644ceb13a806f42d690273b9d844793ac2f515fbc575ba65dc044de0"
+                "sha256:408e4d75d84f51b64d0824894afee44469eba34a4caee621dc53799f80d71ccc",
+                "sha256:64022dea6a06badfa09b300b4dfe8ba968114a737919e8ed50aea1c288f078aa"
             ],
             "index": "pypi",
-            "version": "==5.0.9"
+            "version": "==5.1.2"
         },
         "lazy-object-proxy": {
             "hashes": [
@@ -470,11 +477,11 @@
         },
         "isort": {
             "hashes": [
-                "sha256:3d8e0d7678b66af1e3a6936f2a380a5d4f3faf4b1b38c6aaa4bed6695c6bdcde",
-                "sha256:639b8084644ceb13a806f42d690273b9d844793ac2f515fbc575ba65dc044de0"
+                "sha256:408e4d75d84f51b64d0824894afee44469eba34a4caee621dc53799f80d71ccc",
+                "sha256:64022dea6a06badfa09b300b4dfe8ba968114a737919e8ed50aea1c288f078aa"
             ],
             "index": "pypi",
-            "version": "==5.0.9"
+            "version": "==5.1.2"
         },
         "lazy-object-proxy": {
             "hashes": [
