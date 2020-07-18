@@ -13,11 +13,11 @@ An online judge built with Python and the Django framework to test cases against
 
 I'm trying to build an online judge to allow users of DomeCode to practice coding problems online. DomeCode is a project of mine in the making that allows people to learn code by practicing,participating in DomeCode's forum and using the resources compiled from all over the internet and woven together to create a one-stop experience for programmers.
 
-## Why?
+## Why? 🤔
 
 To put it simply, adding a compiler like Cloud9 IDE or Sphere online judge is gonna cost me some bucks so initially I plan on building an in-house solution to allow users to practice coding problems like they did on Google Kickstart before 2019 or the way Coursera's autograder does. I hope this works out since the concept is sound as per my understanding.
 
-## Support 
+## Support this project 🤗 
 
 Since I've already started to build this, I'm probably gonna learn to build a cloud based compiler as well and add it on this existing version of Online Judge/autograder to make it a full-fledged Online Judge to the likes of Sphere Online Judge. 
 
