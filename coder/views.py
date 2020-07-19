@@ -3,6 +3,7 @@ from django.urls import reverse_lazy, reverse
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, RedirectView
 from django.db.models import Q
+
 from .models import Question, Answer
 
 
@@ -31,3 +32,23 @@ class CoderCreateView(CreateView):
 	def form_valid(self, form):
 		form.instance.question = Question.objects.get(id=self.kwargs['qid'])
 		return super().form_valid(form)
+
+	def compare(solution, result):
+		is_same = True
+		for line1, line2 in zip(solution, result):
+			if line1 != line2:
+				is_same = False
+		return is_same
+ 
+	def upload_file(request):
+		if request.method == 'POST':
+			form = UploadFileForm(request.POST, request.FILES)
+			if form.is_valid():
+				compare(request.FILES['file'])
+				return HttpResponseRedirect('/success/url/')
+		else:
+			form = UploadFileForm()
+		return render(request, 'upload.html', {'form': form})
+
+
+
