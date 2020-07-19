@@ -14,15 +14,16 @@
 
 <!--Improve Search with Incremental Search (AJAX and JQuery)-->
 
-
+<br>
 
 <h1>Practice </h1>
 
+<br>
 
 {% for object in question %}
 <article class="media content-section shadow">
     <div class="media-body container-fluid">
-        <h3><a href="{%url 'coder:detail' object.pk%}">{{object.title }}</a></h3>
+        <h3><a class="article-title" href="{%url 'coder:detail' object.pk%}">{{object.title }}</a></h3>
     </div>
 </article>
 {% endfor %}

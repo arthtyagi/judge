@@ -34,9 +34,12 @@
     <header class="site-header">
         <nav class="navbar navbar-expand-sm py-1 navbar-dark bg-steel fixed-top">
             <div class="container-fluid">
+
+
                 <a class="navbar-brand mr-6" style="font-family:'Raleway' ;font-weight: bolder;  font-size:36px ;  background: linear-gradient(to right, #f12711, #f5af19); 
 					-webkit-background-clip: text;
-					-webkit-text-fill-color: transparent;" href="{%url 'coder:home'%}">online judge</a>
+                    -webkit-text-fill-color: transparent;" href="{%url 'coder:home'%}">OnlineJudge</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
                     aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -44,45 +47,51 @@
 
 
                 <div class="collapse navbar-collapse" id="navbarToggle">
+
                     <div class="navbar-nav mr-auto">
                         <li class="nav-item">
                             <a class="nav-item nav-link" href="#">Blog</a>
                         </li>
-
                     </div>
+
                     <!-- Navbar Right Side -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto">
 
-                            <li class="nav-item">
-                                <a class="nav-item nav-link" href="#">Practice</a>
-                            </li>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="#">Practice</a>
+                        </li>
+                    </ul>
 
-
-                        </ul>
-                    </div>
                 </div>
+
+
             </div>
         </nav>
     </header>
 
+
     <div role="main" class="container">
         <div class="row">
+
             <div class="col-md-12">
+
                 {%if messages%}{%for message in messages%}
+
                 <div class='alert alert-{{message.tags}}'>
                     {{message}}
                 </div>
-                {%endfor%} {%endif%}
-                {% block content %}{% endblock %}
-            </div>
-        </div>
-        <br>
-        <br>
-        <br>
 
+                {%endfor%} {%endif%}
+
+                {% block content %}{% endblock %}
+
+            </div>
+
+        </div>
 
     </div>
+
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
