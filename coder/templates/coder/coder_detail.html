@@ -12,8 +12,8 @@
 <div class="content-section">
     <a href="{{answer.result.url}}">{{answer.result|safe}}</a>
 </div>
-
 {%endfor%}
+
 <span class="badge badge-dark badge-pill"> <a class="nav-item nav-link" href="{%url 'coder:submit' object.pk%}">Submit
         Answer</a></span>
 {% endblock content %}

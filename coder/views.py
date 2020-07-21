@@ -33,8 +33,15 @@ class CoderCreateView(CreateView):
     def form_valid(self, form):
         question = Question.objects.get(id=self.kwargs['qid'])
         form.instance.question = question
-        form.instance.is_correct = compare.compare((
+     #   form.instance.question.iscorrect = compare.compare((
+      #      list(self.request.FILES.values())[0], question.solution), (list(self.request.FILES.values())[0], form.instance.result))
+        form.instance.iscorrect = compare.compare((
             list(self.request.FILES.values())[0], question.solution), (list(self.request.FILES.values())[0], form.instance.result))
+        if form.instance.iscorrect:
+            form.instance.question.iscorrect = True
+
+        form.save()
+        form.instance.question.save()
         return super().form_valid(form)
 
 
