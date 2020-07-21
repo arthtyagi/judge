@@ -29,9 +29,9 @@ If this project actually gets a decent number of stars and forks, I will be impl
 
 - [ ] Adding an actual compiler ( resource-heavy so well yeah it's expensive when run on the cloud ) 💸
 
-- Better admin interface 🌟
+- [ ] Better admin interface 🌟
 
-- Rich text editing for coding problems to include pictures and more!✨ 
+- [ ] Rich text editing for coding problems to include pictures and more!✨ 
 
 
 ## Support this project 🤗 
