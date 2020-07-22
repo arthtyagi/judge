@@ -1,4 +1,6 @@
-# Judge ⚖️
+# Judge ⚖️ 
+![judge (1)](https://user-images.githubusercontent.com/41021374/88198064-eccce880-cc60-11ea-8356-c86f7caddac8.png)
+
 
 ![GitHub](https://img.shields.io/github/license/arthtyagi/judge?style=flat-square)
 
@@ -7,8 +9,6 @@
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge)
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arthtyagi/judge)
-
-![judge (1)](https://user-images.githubusercontent.com/41021374/88198064-eccce880-cc60-11ea-8356-c86f7caddac8.png)
 
 ![image](https://user-images.githubusercontent.com/41021374/88192318-0454a300-cc5a-11ea-9b2a-1baa9597b957.png)
 
