@@ -42,7 +42,7 @@ I just submitted the correct solution and as you can see, the autograder evaluat
 
 - Yes, I know. I need to add a checkmark next to the question if it's evaluated correct but this is just to show that the autograder works and you can head back to the homepage of the website and submit your answer to the question! The possibilities tread as far as your imagination on how to use this. Modify this code to suit your purpose, it's MIT Licensing so have at it!
 
-** Most importantly though, if you liked using this, STAR ⭐ and FORK 🍴 this repository. That would make me happier and I would feel motivated to add new exciting features to this :) **
+**Most importantly though, if you liked using this, STAR ⭐ and FORK 🍴 this repository. That would make me happier and I would feel motivated to add new exciting features to this.**
 
 ## You should know this!
 
