@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Judge by arthtyagi</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Judge</h1>
+        <p>An online judge/ autograder ⚖️   built with Python and the Django framework to test cases against your solution. Check out the sponsor links and help fund DomeCode.</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/arthtyagi/judge" class="button fork"><strong>View On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/arthtyagi/judge/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/arthtyagi/judge/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h1>
+<a id="judge-️" class="anchor" href="#judge-%EF%B8%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Judge <g-emoji class="g-emoji" alias="balance_scale" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2696.png">⚖️</g-emoji>
+</h1>
+<p><img src="https://user-images.githubusercontent.com/41021374/88198064-eccce880-cc60-11ea-8356-c86f7caddac8.png" alt="judge (1)"></p>
+<p><img src="https://img.shields.io/github/license/arthtyagi/judge?style=flat-square" alt="GitHub"></p>
+<p><img src="https://img.shields.io/discord/723603615582912512?color=black&amp;logo=discord&amp;logoColor=white" alt="Discord">
+<img src="https://img.shields.io/github/pipenv/locked/dependency-version/arthtyagi/judge/django" alt="GitHub Pipenv locked dependency version">
+<img src="https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge" alt="GitHub Pipenv locked Python version">
+<img src="https://img.shields.io/pypi/implementation/django" alt="PyPI - Implementation">
+<img src="https://img.shields.io/github/commit-activity/m/arthtyagi/judge" alt="GitHub commit activity"></p>
+<p><img src="https://user-images.githubusercontent.com/41021374/88192318-0454a300-cc5a-11ea-9b2a-1baa9597b957.png" alt="image"></p>
+<p>An online judge built with Python and the Django framework to test cases against your solution. A better version of this is to be implemented in DomeCode. Check out the sponsor links and help fund DomeCode.</p>
+<p>I'm trying to build an online judge to allow users of DomeCode to practice coding problems online. DomeCode is a project of mine in the making that allows people to learn code by practicing,participating in DomeCode's forum and using the resources compiled from all over the internet and woven together to create a one-stop experience for programmers.</p>
+<p><strong>The autograder for DomeCode is also being built on top of this with more ramifications and a few more features for the first release. But in actuality, this is the underlying piece of code in the most minimalistic way.</strong></p>
+<h2>
+<a id="why-" class="anchor" href="#why-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Why? <g-emoji class="g-emoji" alias="thinking" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f914.png">🤔</g-emoji>
+</h2>
+<p>To put it simply, adding a compiler like Cloud9 IDE or Sphere online judge is gonna cost me some bucks so initially I plan on building an in-house solution to allow users to practice coding problems like they did on Google Kickstart before 2019 or the way Coursera's autograder does. I hope this works out since the concept is sound as per my understanding.</p>
+<h2>
+<a id="how-to-use-this-" class="anchor" href="#how-to-use-this-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to use this? <g-emoji class="g-emoji" alias="bulb" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4a1.png">💡</g-emoji>
+</h2>
+<ul>
+<li>
+<p>Clone this repository. Install the requirements by activating <code>pipenv shell</code>, and running <code>pipenv install</code>.</p>
+</li>
+<li>
+<p>Add this app to your project directory and then in your <code>settings.py</code> as well.</p>
+</li>
+<li>
+<p>Make and run the migrations!</p>
+</li>
+<li>
+<p>Add the appropriate urls (<code>path('', include('coder.urls'))</code>) in your project's <code>urls.py</code> file.</p>
+</li>
+<li>
+<p>Run the server. And get on your <a href="https://localhost:8080/admin/"><code>localhost:8080/admin</code></a></p>
+</li>
+<li>
+<p>You will notice the coder app and it's models quite like this :
+<img src="https://user-images.githubusercontent.com/41021374/88209550-7e902200-cc70-11ea-9860-7a9cf432514c.png" alt="image"></p>
+</li>
+<li>
+<p>Create a new question. I included the RichTextEditor too so that should make it easier to include photos, symbols, charts and more.
+<img src="https://user-images.githubusercontent.com/41021374/88210496-ee52dc80-cc71-11ea-9f41-dc763fa61e9f.png" alt="image">
+<img src="https://user-images.githubusercontent.com/41021374/88210743-47227500-cc72-11ea-86ae-16e5abe16969.png" alt="image"></p>
+</li>
+</ul>
+<p>I just submitted the correct solution and as you can see, the autograder evaluated it as a correct answer.
+<img src="https://user-images.githubusercontent.com/41021374/88210883-7cc75e00-cc72-11ea-83da-943840635cf5.png" alt="image"></p>
+<ul>
+<li>Yes, I know. I need to add a checkmark next to the question if it's evaluated correct but this is just to show that the autograder works and you can head back to the homepage of the website and submit your answer to the question! The possibilities tread as far as your imagination on how to use this. Modify this code to suit your purpose, it's MIT Licensing so have at it!</li>
+</ul>
+<p><strong>Most importantly though, if you liked using this, STAR <g-emoji class="g-emoji" alias="star" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2b50.png">⭐</g-emoji> and FORK <g-emoji class="g-emoji" alias="fork_and_knife" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f374.png">🍴</g-emoji> this repository. That would make me happier and I would feel motivated to add new exciting features to this.</strong></p>
+<h2>
+<a id="how-does-the-autograder-work-so-blazingly-fast" class="anchor" href="#how-does-the-autograder-work-so-blazingly-fast" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How does the autograder work so blazingly fast?</h2>
+<p>If you actually used this, you might be wondering how does the autograder make the process so blazingly fast in comparision to other autograders that might take a while ( ~10-15 secs whereas this app does it within ~2-3 seconds ), the reason lies within the fact that it never actually reads from the disk while evaluating the user's solution, it directly reads from the memory and does not overwhelm the system either since text files are generally smaller.</p>
+<h2>
+<a id="you-should-know-this" class="anchor" href="#you-should-know-this" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>You should know this!</h2>
+<p>If this project actually gets a decent number of stars and forks, I will be implementing a few more core features to this including but not limited to :</p>
+<ul>
+<li>
+<p>[ ] Displaying whether the answer is correct in Question's submission panel. <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></p>
+</li>
+<li>
+<p>[ ] Displaying whether the question attempted by the user is correct in the Question List View. <g-emoji class="g-emoji" alias="white_check_mark" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2705.png">✅</g-emoji></p>
+</li>
+<li>
+<p>[ ] Adding an actual compiler ( resource-heavy so well yeah it's expensive when run on the cloud ) <g-emoji class="g-emoji" alias="money_with_wings" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4b8.png">💸</g-emoji></p>
+</li>
+<li>
+<p>[ ] Better admin interface <g-emoji class="g-emoji" alias="star2" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f31f.png">🌟</g-emoji></p>
+</li>
+<li>
+<p>[X] <del>Rich text editing for coding problems to include pictures and more!<g-emoji class="g-emoji" alias="sparkles" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png">✨</g-emoji></del></p>
+</li>
+</ul>
+<h2>
+<a id="support-this-project-" class="anchor" href="#support-this-project-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Support this project <g-emoji class="g-emoji" alias="hugs" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f917.png">🤗</g-emoji>
+</h2>
+<p>Since I've already started to build this, I'm probably gonna learn to build a cloud based compiler as well and add it on this existing version of Online Judge/autograder to make it a full-fledged Online Judge to the likes of Sphere Online Judge.</p>
+<p>I intend to keep the source code absolutely open source forever for people to use and instead of paying services like Cloud9 IDE or Sphere Online Judge, this would allow users to implement this in the form a PyPi package ( will ship it soon ) and use it for their own applications and host it on AWS/GCP/Digital Ocean for slightly cheaper than you might with a pre built online judge to be embedded in your application.</p>
+<p>This open source project is here to stay and be maintained so I would urge you to consider supporting this project by sponsoring it! Links included on the Github repo info panel.</p>
+<p>Also checkout one of the other projects, <a href="https://github.com/arthtyagi/geddit">Geddit <g-emoji class="g-emoji" alias="unicorn" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f984.png">🦄</g-emoji></a> having base structural code for some of the features of DomeCode.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/arthtyagi">arthtyagi</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
