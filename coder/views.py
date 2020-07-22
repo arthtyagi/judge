@@ -35,8 +35,12 @@ class CoderCreateView(CreateView):
         form.instance.question = question
      #   form.instance.question.iscorrect = compare.compare((
       #      list(self.request.FILES.values())[0], question.solution), (list(self.request.FILES.values())[0], form.instance.result))
-        form.instance.iscorrect = compare.compare((
-            list(self.request.FILES.values())[0], question.solution), (list(self.request.FILES.values())[0], form.instance.result))
+        form.instance.iscorrect = compare.compare(
+            (list(self.request.FILES.values())[
+             0].file.name, question.solution),
+            (list(self.request.FILES.values())[
+             0].file.name, form.instance.result)
+        )
         if form.instance.iscorrect:
             form.instance.question.iscorrect = True
 

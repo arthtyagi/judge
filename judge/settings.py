@@ -105,7 +105,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
+FILE_UPLOAD_HANDLERS = [
+    'django.core.files.uploadhandler.TemporaryFileUploadHandler',
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
