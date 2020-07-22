@@ -8,6 +8,8 @@
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arthtyagi/judge)
 
+![judge (1)](https://user-images.githubusercontent.com/41021374/88198064-eccce880-cc60-11ea-8356-c86f7caddac8.png)
+
 ![image](https://user-images.githubusercontent.com/41021374/88192318-0454a300-cc5a-11ea-9b2a-1baa9597b957.png)
 
 An online judge built with Python and the Django framework to test cases against your solution. A better version of this is to be implemented in DomeCode. Check out the sponsor links and help fund DomeCode.
