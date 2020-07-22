@@ -22,6 +22,28 @@ I'm trying to build an online judge to allow users of DomeCode to practice codin
 
 To put it simply, adding a compiler like Cloud9 IDE or Sphere online judge is gonna cost me some bucks so initially I plan on building an in-house solution to allow users to practice coding problems like they did on Google Kickstart before 2019 or the way Coursera's autograder does. I hope this works out since the concept is sound as per my understanding.
 
+## How to use this? 💡
+
+- Clone this repository. Install the requirements by activating `pipenv shell`, and running `pipenv install`.
+- Add this app to your project directory and then in your `settings.py` as well.
+- Make and run the migrations!
+- Add the appropriate urls (`path('', include('coder.urls'))`) in your project's `urls.py` file.
+- Run the server. And get on your [`localhost:8080/admin`](https://localhost:8080/admin/)
+- You will notice the coder app and it's models quite like this :
+![image](https://user-images.githubusercontent.com/41021374/88209550-7e902200-cc70-11ea-9860-7a9cf432514c.png)
+
+- Create a new question. I included the RichTextEditor too so that should make it easier to include photos, symbols, charts and more.
+![image](https://user-images.githubusercontent.com/41021374/88210496-ee52dc80-cc71-11ea-9f41-dc763fa61e9f.png)
+![image](https://user-images.githubusercontent.com/41021374/88210743-47227500-cc72-11ea-86ae-16e5abe16969.png)
+
+I just submitted the correct solution and as you can see, the autograder evaluated it as a correct answer.
+![image](https://user-images.githubusercontent.com/41021374/88210883-7cc75e00-cc72-11ea-83da-943840635cf5.png)
+
+
+- Yes, I know. I need to add a checkmark next to the question if it's evaluated correct but this is just to show that the autograder works and you can head back to the homepage of the website and submit your answer to the question! The possibilities tread as far as your imagination on how to use this. Modify this code to suit your purpose, it's MIT Licensing so have at it!
+
+** Most importantly though, if you liked using this, STAR ⭐ and FORK 🍴 this repository. That would make me happier and I would feel motivated to add new exciting features to this :) **
+
 ## You should know this!
 
 If this project actually gets a decent number of stars and forks, I will be implementing a few more core features to this including but not limited to :
@@ -35,7 +57,6 @@ If this project actually gets a decent number of stars and forks, I will be impl
 - [ ] Better admin interface 🌟
 
 - [X] ~~Rich text editing for coding problems to include pictures and more!✨~~ 
-
 
 ## Support this project 🤗 
 
