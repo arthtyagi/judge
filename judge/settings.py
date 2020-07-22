@@ -34,9 +34,9 @@ INSTALLED_APPS = [
     # myapps
     'coder.apps.CoderConfig',
 
-    # crispy
+    # crispy and ckeditor
     'crispy_forms',
-
+    'ckeditor',
     # default
     'django.contrib.admin',
     'django.contrib.auth',
@@ -134,3 +134,14 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'auto',  # You can change this based on your requirements.
+        'width': 'auto',
+        'height': 'auto',
+        'uiColor': 'moona-lisa'
+
+
+    },
+}

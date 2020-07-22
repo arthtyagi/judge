@@ -1,12 +1,13 @@
 from django.db import models
 from django.core.validators import FileExtensionValidator
 from django.urls import reverse
+from ckeditor.fields import RichTextField
 
 
 class Question(models.Model):
     title = models.CharField(max_length=100)
-    content = models.TextField()
-    iscorrect = models.BooleanField(default = False)
+    content = RichTextField()
+    iscorrect = models.BooleanField(default=False)
     solution = models.FileField(
         validators=[FileExtensionValidator(allowed_extensions=['txt'])], upload_to='media')
 

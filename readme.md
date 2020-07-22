@@ -8,6 +8,7 @@
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arthtyagi/judge)
 
+![image](https://user-images.githubusercontent.com/41021374/88192318-0454a300-cc5a-11ea-9b2a-1baa9597b957.png)
 
 An online judge built with Python and the Django framework to test cases against your solution. A better version of this is to be implemented in DomeCode. Check out the sponsor links and help fund DomeCode.
 
@@ -31,7 +32,7 @@ If this project actually gets a decent number of stars and forks, I will be impl
 
 - [ ] Better admin interface 🌟
 
-- [ ] Rich text editing for coding problems to include pictures and more!✨ 
+- [X] ~~Rich text editing for coding problems to include pictures and more!✨~~ 
 
 
 ## Support this project 🤗 
