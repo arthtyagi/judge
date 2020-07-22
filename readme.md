@@ -44,6 +44,11 @@ I just submitted the correct solution and as you can see, the autograder evaluat
 
 **Most importantly though, if you liked using this, STAR ⭐ and FORK 🍴 this repository. That would make me happier and I would feel motivated to add new exciting features to this.**
 
+## How does the autograder work so blazingly fast?
+
+If you actually used this, you might be wondering how does the autograder make the process so blazingly fast in comparision to other autograders that might take a while ( ~10-15 secs whereas this app does it within ~2-3 seconds ), the reason lies within the fact that it never actually reads from the disk while evaluating the user's solution, it directly reads from the memory and does not overwhelm the system either since text files are generally smaller.
+
+
 ## You should know this!
 
 If this project actually gets a decent number of stars and forks, I will be implementing a few more core features to this including but not limited to :
