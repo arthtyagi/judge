@@ -57,7 +57,8 @@ If this project actually gets a decent number of stars and forks, I will be impl
 
 - [ ] Displaying whether the answer is correct in Question's submission panel. ✅
 
-- [ ] Displaying whether the question attempted by the user is correct in the Question List View. ✅
+- [X] ~~Displaying whether the question attempted by the user is correct in the Question List View. ✅~~
+![image](https://user-images.githubusercontent.com/41021374/88254206-1d993600-ccd2-11ea-99a1-0fd0d42dac81.png)
 
 - [ ] Adding an actual compiler ( resource-heavy so well yeah it's expensive when run on the cloud ) 💸
 
