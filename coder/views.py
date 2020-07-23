@@ -13,6 +13,18 @@ class CoderListView(ListView):
     template_name = "coder/coder_list.html"
     context_object_name = 'question'
 
+    def get_queryset(self, *args, **kwargs):
+        object_list = super(CoderListView, self).get_queryset(*args, **kwargs)
+        search = self.request.GET.get('q', None)
+        if search:
+            object_list = object_list.filter(
+                Q(title__contains=search) |
+                Q(content__contains=search)
+            )
+            return object_list
+        else:
+            return object_list
+
 
 class CoderDetailView(DetailView):
     model = Question
