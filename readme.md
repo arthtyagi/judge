@@ -24,10 +24,19 @@ To put it simply, adding a compiler like Cloud9 IDE or Sphere online judge is go
 
 ## How to use this? 💡
 
-- Clone this repository. Install the requirements by activating `pipenv shell`, and running `pipenv install`.
-- Add this app to your project directory and then in your `settings.py` as well.
-- Make and run the migrations!
-- Add the appropriate urls (`path('', include('coder.urls'))`) in your project's `urls.py` file.
+- Add “coder” to your INSTALLED_APPS setting like this:
+```
+INSTALLED_APPS = [
+    ...
+    'coder',
+]
+```
+Include the polls URLconf in your project urls.py like this:
+
+`path('coder/', include('coder.urls')),`
+Run python manage.py migrate to create the polls models.
+
+- Run the migrations!
 - Run the server. And get on your [`localhost:8000/admin`](https://localhost:8000/admin/)
 - You will notice the coder app and it's models quite like this :
 ![image](https://user-images.githubusercontent.com/41021374/88209550-7e902200-cc70-11ea-9860-7a9cf432514c.png)
