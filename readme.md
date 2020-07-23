@@ -75,3 +75,7 @@ I intend to keep the source code absolutely open source forever for people to us
 This open source project is here to stay and be maintained so I would urge you to consider supporting this project by sponsoring it! Links included on the Github repo info panel.
 
 Also checkout one of the other projects, [Geddit 🦄](https://github.com/arthtyagi/geddit) having base structural code for some of the features of DomeCode. 
+
+## A word of thanks
+
+I also want to thank the Django Developer Community all over the internet for being a good help when I got stuck.
