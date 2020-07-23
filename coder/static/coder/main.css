@@ -148,7 +148,8 @@ a.article-title:hover {
   border: solid 1px #000000;
 }
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: rgb(255, 255, 255);
   background: rgb(0, 0, 0);
 }

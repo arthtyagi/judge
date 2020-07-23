@@ -1,7 +1,12 @@
 {% extends "coder/base.html" %}
 {%load viewans%}
+{%load static%}
 {% block content %}
+{%if question.iscorrect%}
+<h2 class="article-title">Q. {{ question.title }} (Solved)  <img src="{%static 'coder/check.svg'%}" height="28" width="28"> </h2>
+{%else%}
 <h2 class="article-title">Q. {{ question.title }}</h2>
+{%endif%}
 <article class="media content-section shadow">
     {{question.content|safe}}
 </article>

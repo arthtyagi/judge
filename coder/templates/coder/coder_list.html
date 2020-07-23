@@ -1,4 +1,5 @@
 {% extends "coder/base.html" %}
+{%load static%}
 {% load crispy_forms_tags %}
 {% block content %}
 <div class="col-sm-5">
@@ -23,7 +24,12 @@
 {% for object in question %}
 <article class="media content-section shadow">
     <div class="media-body container-fluid">
+        {%if object.iscorrect%}
+        <h3><a class="article-title" href="{%url 'coder:detail' object.pk%}">{{object.title }}</a>
+        <img src="{%static 'coder/check.svg'%}" height="18" width="18"></h3>
+        {%else%}
         <h3><a class="article-title" href="{%url 'coder:detail' object.pk%}">{{object.title }}</a></h3>
+        {%endif%}
     </div>
 </article>
 {% endfor %}
