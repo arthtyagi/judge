@@ -53,7 +53,7 @@ If you actually used this, you might be wondering how does the autograder make t
 
 If this project actually gets a decent number of stars and forks, I will be implementing a few more core features to this including but not limited to :
 
-- [X] ~~ Search functionality 🔍 ~~
+- [X] ~~Search functionality 🔍~~
 
 - [ ] Displaying whether the answer is correct in Question's submission panel. ✅
 
