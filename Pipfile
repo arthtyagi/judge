@@ -30,7 +30,6 @@ markdown2 = "*"
 django-widget-tweaks = "*"
 django-mptt = "*"
 django-awesome-avatar = "*"
-decouple = "*"
 
 [requires]
 python_version = "3.8"
