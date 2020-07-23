@@ -3,7 +3,7 @@
 
 
 ![GitHub](https://img.shields.io/github/license/arthtyagi/judge?style=flat-square)
-
+[![codebeat badge](https://codebeat.co/badges/4c2604cd-3940-40e6-83e9-8ec2ed3eeab4)](https://codebeat.co/projects/github-com-arthtyagi-judge-master)
 ![Discord](https://img.shields.io/discord/723603615582912512?color=black&logo=discord&logoColor=white)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/arthtyagi/judge/django)
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge)
