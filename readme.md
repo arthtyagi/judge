@@ -8,6 +8,10 @@
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/arthtyagi/judge/django)
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge)
 ![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
+[![Downloads](https://pepy.tech/badge/django-judge)](https://pepy.tech/project/django-judge)
+[![Downloads](https://pepy.tech/badge/django-judge/month)](https://pepy.tech/project/django-judge/month)
+[![Downloads](https://pepy.tech/badge/django-judge/week)](https://pepy.tech/project/django-judge/week)
+
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/arthtyagi/judge)
 
 ![image](https://user-images.githubusercontent.com/41021374/88192318-0454a300-cc5a-11ea-9b2a-1baa9597b957.png)
