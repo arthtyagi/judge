@@ -7,7 +7,7 @@
 ![Discord](https://img.shields.io/discord/723603615582912512?color=black&logo=discord&logoColor=white)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/arthtyagi/judge/django)
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge)
-![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/django-judge)
 [![Downloads](https://pepy.tech/badge/django-judge)](https://pepy.tech/project/django-judge)
 [![Downloads](https://pepy.tech/badge/django-judge/month)](https://pepy.tech/project/django-judge/month)
 [![Downloads](https://pepy.tech/badge/django-judge/week)](https://pepy.tech/project/django-judge/week)
