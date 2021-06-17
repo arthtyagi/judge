@@ -7,7 +7,7 @@
 ![Discord](https://img.shields.io/discord/723603615582912512?color=black&logo=discord&logoColor=white)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/arthtyagi/judge/django)
 ![GitHub Pipenv locked Python version](https://img.shields.io/github/pipenv/locked/python-version/arthtyagi/judge)
-![PyPI - Implementation](https://img.shields.io/pypi/implementation/django-judge)
+![PyPI - Implementation](https://img.shields.io/pypi/implementation/django)
 [![Downloads](https://pepy.tech/badge/django-judge)](https://pepy.tech/project/django-judge)
 [![Downloads](https://pepy.tech/badge/django-judge/month)](https://pepy.tech/project/django-judge/month)
 [![Downloads](https://pepy.tech/badge/django-judge/week)](https://pepy.tech/project/django-judge/week)
@@ -21,6 +21,10 @@ An online judge built with Python and the Django framework to test cases against
 I'm trying to build an online judge to allow users of DomeCode to practice coding problems online. DomeCode is a project of mine in the making that allows people to learn code by practicing,participating in DomeCode's forum and using the resources compiled from all over the internet and woven together to create a one-stop experience for programmers.
 
 **The autograder for DomeCode is also being built on top of this with more ramifications and a few more features for the first release. But in actuality, this is the underlying piece of code in the most minimalistic way.**
+
+**Tl,dr; This package just compares your solution text to the actual solution for the question. It just adds some ease of use to that task. You need to add the solutions to your questions from the admin and that's it, you're done. The use will upload their solution in the text form, this library will compare those two solutions and grade accordingly.**
+
+Update : **Now we just use the Judge0 RapidAPI at DomeCode, might consider building an alternative to it.**
 
 ## Why? 🤔
 
